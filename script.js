@@ -21,42 +21,29 @@ document.addEventListener("DOMContentLoaded", () => {
         Notification.requestPermission();
     }
 
+    // Función para verificar la hora y enviar notificaciones
     function checkSchedule() {
         const now = new Date();
         const currentHour = now.getHours().toString().padStart(2, "0");
         const currentMinute = now.getMinutes().toString().padStart(2, "0");
         const currentTime = `${currentHour}:${currentMinute}`;
-        
-        let activityHighlighted = false;
 
         document.querySelectorAll("li[data-time]").forEach(item => {
             if (item.getAttribute("data-time") === currentTime) {
-                item.classList.add("active-activity");
                 showNotification(item.getAttribute("data-message"));
-                highlightDay(item.closest(".day-container"));
-                activityHighlighted = true;
-            } else {
-                item.classList.remove("active-activity");
+                console.log("Recordatorio enviado...");
             }
         });
     }
 
-    function highlightDay(dayElement) {
-        document.querySelectorAll(".day-container").forEach(day => {
-            day.classList.remove("active-day");
-        });
-        if (dayElement) {
-            dayElement.classList.add("active-day");
-        }
-    }
-
+    // Función para mostrar notificación
     function showNotification(message) {
         if (Notification.permission === "granted") {
             new Notification("📌 Recordatorio", { body: message });
+            
         }
     }
 
     // Revisar cada minuto
     setInterval(checkSchedule, 60000);
-    checkSchedule(); // Ejecutar al cargar la página
 });
