@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Horario Semanal</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Mi Horario Semanal</h1>
+        <button id="toggle-dark-mode">🌙 Modo Oscuro</button>
+    </header>
+
+    <main>
+        <section class="schedule">
+            <div class="day-container">
+                <h2>Lunes a Jueves</h2>
+                <ul>
+                    <li data-time="07:00" data-message="Hora de leer la Biblia"><strong>07:00 - 07:30:</strong> Lectura de la Biblia</li>
+                    <li data-time="07:30" data-message="Hora de hacer ejercicio"><strong>07:30 - 08:00:</strong> Ejercicio ligero (opcional)</li>
+                    <li data-time="08:00" data-message="Hora del desayuno"><strong>08:00 - 08:30:</strong> Desayuno</li>
+                    <li data-time="08:30" data-message="Hora de estudiar Spring Boot o Ciberseguridad"><strong>08:30 - 10:00:</strong> Aprendizaje técnico</li>
+                    <li data-time="10:00" data-message="Hora de tomar un descanso"><strong>10:00 - 10:20:</strong> Descanso</li>
+                    <li data-time="10:20" data-message="Hora de estudiar inglés"><strong>10:20 - 11:00:</strong> Estudio de inglés</li>
+                    <li data-time="11:00" data-message="Hora de trabajar en tu emprendimiento"><strong>11:00 - 12:00:</strong> Trabajo en tu emprendimiento (PETTERSSON)</li>
+                    <li data-time="12:00" data-message="Hora del almuerzo y descanso"><strong>12:00 - 13:00:</strong> Almuerzo y descanso</li>
+                    <li data-time="13:00" data-message="Hora de estudiar alemán o italiano"><strong>13:00 - 14:00:</strong> Estudio de alemán o italiano</li>
+                    <li data-time="14:00" data-message="Hora de preparación de reuniones"><strong>14:00 - 15:00:</strong> Preparación de reuniones (Martes y Jueves)</li>
+                    <li data-time="15:00" data-message="Hora de trabajar en el proyecto de domótica"><strong>15:00 - 17:00:</strong> Proyecto de domótica / Programación Backend</li>
+                    <li data-time="17:00" data-message="Hora de practicar idiomas"><strong>17:00 - 18:00:</strong> Práctica de idiomas</li>
+                    <li data-time="18:00" data-message="Tiempo libre y descanso"><strong>18:00 - 19:00:</strong> Tiempo libre / Descanso</li>
+                    <li data-time="19:00" data-message="Hora de cenar"><strong>19:00 - 20:00:</strong> Cena</li>
+                    <li data-time="20:00" data-message="Hora de trabajar en tu emprendimiento"><strong>20:00 - 22:00:</strong> Desarrollo de tu emprendimiento / Revisión de pendientes</li>
+                    <li data-time="22:00" data-message="Hora de leer la Biblia y reflexionar"><strong>22:00 - 23:00:</strong> Lectura de la Biblia / Reflexión</li>
+                    <li data-time="23:00" data-message="Hora de dormir"><strong>23:00:</strong> Dormir</li>
+                </ul>
+            </div>
+
+            <div class="day-container">
+                <h2>Viernes</h2>
+                <ul>
+                    <li data-time="07:00" data-message="Hora de leer la Biblia"><strong>07:00 - 07:30:</strong> Lectura de la Biblia</li>
+                    <li data-time="07:30" data-message="Hora de dar clases a alumnos de primaria"><strong>07:30 - 14:30:</strong> Clases a alumnos de primaria</li>
+                    <li data-time="15:00" data-message="Hora de descansar y almorzar"><strong>15:00 - 16:00:</strong> Descanso y almuerzo tardío</li>
+                    <li data-time="16:00" data-message="Hora de revisar la clase universitaria"><strong>16:00 - 17:00:</strong> Revisión de clase universitaria</li>
+                    <li data-time="17:00" data-message="Hora de estudiar idiomas"><strong>17:00 - 18:30:</strong> Estudio de idiomas</li>
+                    <li data-time="18:30" data-message="Hora de cenar"><strong>18:30 - 19:00:</strong> Cena y descanso breve</li>
+                    <li data-time="19:00" data-message="Hora de la clase universitaria"><strong>19:00 - 21:00:</strong> Clase universitaria</li>
+                    <li data-time="21:00" data-message="Hora de revisar conceptos de la clase"><strong>21:00 - 22:00:</strong> Revisión de conceptos de la clase</li>
+                    <li data-time="22:00" data-message="Hora de leer la Biblia y reflexionar"><strong>22:00 - 23:00:</strong> Lectura de la Biblia / Reflexión</li>
+                    <li data-time="23:00" data-message="Hora de dormir"><strong>23:00:</strong> Dormir</li>
+                </ul>
+            </div>
+
+            <div class="day-container">
+                <h2>Sábado</h2>
+                <ul>
+                    <li data-time="07:00" data-message="Hora de leer la Biblia"><strong>07:00 - 07:30:</strong> Lectura de la Biblia</li>
+                    <li data-time="08:30" data-message="Hora de trabajar en el emprendimiento"><strong>08:30 - 10:00:</strong> Trabajo en emprendimiento o estudio técnico</li>
+                    <li data-time="10:00" data-message="Hora de preparar la reunión"><strong>10:00 - 11:30:</strong> Preparación de reunión</li>
+                    <li data-time="12:00" data-message="Hora de la reunión y desplazamiento"><strong>12:00 - 18:00:</strong> Reunión y desplazamiento</li>
+                    <li data-time="19:00" data-message="Hora de la clase universitaria"><strong>19:00 - 20:00:</strong> Ver grabación de la clase</li>
+                    <li data-time="22:00" data-message="Hora de leer la Biblia y reflexionar"><strong>22:00 - 23:00:</strong> Lectura de la Biblia / Reflexión</li>
+                    <li data-time="23:00" data-message="Hora de dormir"><strong>23:00:</strong> Dormir</li>
+                </ul>
+            </div>
+            <div class="day-container">
+                <h2>Domingo</h2>
+                <ul>
+                    <li data-time="07:00" data-message="Hora de leer la Biblia"><strong>07:00 - 07:30:</strong> Lectura de la Biblia</li>
+                    <li data-time="07:30" data-message="Hora del desayuno"><strong>07:30 - 08:00:</strong> Desayuno</li>
+                    <li data-time="08:00" data-message="Participación en obra de educación bíblica"><strong>08:00 - 12:00:</strong> Participación en obra de educación bíblica</li>
+                    <li data-time="12:00" data-message="Hora del almuerzo y descanso"><strong>12:00 - 14:00:</strong> Almuerzo y descanso</li>
+                    <li data-time="14:00" data-message="Curso bíblico"><strong>14:00 - 15:00:</strong> Curso bíblico</li>
+                    <li data-time="15:00" data-message="Ver grabación de clase universitaria"><strong>15:00 - 16:00:</strong> Ver grabación de clase universitaria</li>
+                    <li data-time="16:00" data-message="Tiempo libre"><strong>16:00 - 17:00:</strong> Tiempo libre</li>
+                    <li data-time="17:00" data-message="Aprendizaje de idiomas"><strong>17:00 - 19:00:</strong> Aprendizaje de idiomas</li>
+                    <li data-time="19:00" data-message="Hora de cenar"><strong>19:00 - 20:00:</strong> Cena</li>
+                    <li data-time="20:00" data-message="Preparación de la semana / Emprendimiento"><strong>20:00 - 22:00:</strong> Preparación de la semana / Emprendimiento</li>
+                    <li data-time="22:00" data-message="Lectura de la Biblia / Reflexión"><strong>22:00 - 23:00:</strong> Lectura de la Biblia / Reflexión</li>
+                    <li data-time="23:00" data-message="Hora de dormir"><strong>23:00:</strong> Dormir</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
